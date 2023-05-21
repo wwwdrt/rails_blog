@@ -16,7 +16,7 @@ if user.persisted?
     password_confirmation: 'password'
   )
 else
-  user.encrypted_password = 'password'
+  user.password = 'password'
   user.password_confirmation = 'password'
   user.save!
 end
