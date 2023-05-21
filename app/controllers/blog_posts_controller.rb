@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
 class BlogPostsController < ApplicationController
+  before_action :authenticate_user!, except: %i[index show]
   before_action :set_blog_post, except: %i[index new create]
 
   def index
     @blog_posts = BlogPost.all
   end
 
-  def show
-  end
+  def show; end
 
   def new
     @blog_post = BlogPost.new
@@ -23,8 +23,7 @@ class BlogPostsController < ApplicationController
     end
   end
 
-  def edit
-  end
+  def edit; end
 
   def update
     if @blog_post.update(blog_post_params)
