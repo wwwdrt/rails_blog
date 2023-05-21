@@ -136,6 +136,8 @@ GEM
     nio4r (2.5.9)
     nokogiri (1.15.1-x64-mingw-ucrt)
       racc (~> 1.4)
+    nokogiri (1.15.1-x86_64-linux)
+      racc (~> 1.4)
     orm_adapter (0.5.0)
     parallel (1.23.0)
     parser (3.2.2.1)
@@ -208,9 +210,12 @@ GEM
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
     sqlite3 (1.6.3-x64-mingw-ucrt)
+    sqlite3 (1.6.3-x86_64-linux)
     stimulus-rails (1.2.1)
       railties (>= 6.0.0)
     tailwindcss-rails (2.0.29-x64-mingw-ucrt)
+      railties (>= 6.0.0)
+    tailwindcss-rails (2.0.29-x86_64-linux)
       railties (>= 6.0.0)
     thor (1.2.2)
     timeout (0.3.2)
@@ -244,6 +249,7 @@ GEM
 
 PLATFORMS
   x64-mingw-ucrt
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap
